@@ -168,8 +168,6 @@ export function DesignTab({
   const liveParams = designToParams(design)
   const inductor = chosenInductor(design)
   const capacitor = chosenCapacitor(design)
-  const mosfet = chosenMosfet(design)
-  const diode = chosenDiode(design)
   const L = resolvedL(design)
   const deltaIlTarget = design.ripplePct ? targetInductorRipple(req.iOutMax, design.ripplePct) : null
   const lSuggested =
